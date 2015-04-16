@@ -1,1 +1,3 @@
-if git diff --quiet develop  -- CHANGES.rst; then echo "changelog not changed!"; else echo "OK"; fi
+before_install:
+    # check if CHANGES.rst is changed
+    - ! git diff --quiet develop -- CHANGES.rst
