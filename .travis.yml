@@ -1,4 +1,7 @@
+language: python
+python:
+  - "3.3"
+install:
+    - echo "installing"
 before_install:
-    # check if CHANGES.rst is changed
     - ! git diff --quiet develop -- CHANGES.rst
-
