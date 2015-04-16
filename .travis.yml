@@ -1,0 +1,4 @@
+before_install:
+    # check if CHANGES.rst is changed
+    - ! git diff --quiet develop -- CHANGES.rst
+
