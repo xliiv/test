@@ -3,5 +3,5 @@ python:
   - "3.3"
 install:
     - echo "installing"
-before_install:
-    - "! git diff --quiet develop -- CHANGES.rst"
+script:
+    - bash .update-changelog.sh
