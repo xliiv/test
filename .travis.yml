@@ -4,4 +4,4 @@ python:
 install:
     - echo "installing"
 before_install:
-    - exit 0
+    - git diff --quiet develop -- CHANGES.rst
