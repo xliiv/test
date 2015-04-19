@@ -4,4 +4,4 @@ python:
 install:
     - echo "installing"
 before_install:
-    - git diff --quiet develop -- CHANGES.rst
+    - .update-changelog.sh
