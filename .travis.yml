@@ -3,4 +3,5 @@ python:
   - "3.3"
 install:
     - echo "installing"
-script: .update-changelog.sh
+script:
+    - bash .update-changelog.sh
